@@ -21,15 +21,25 @@
 git clone <URL_репозитория>
 
 cd <папка_проекта>
+```
+**2. Настройка окружения:**
 
-**2. Установка зависимостей:**
-```bash
+# Для ОС Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+# Для UNIX-систем
+python3 -m venv .venv
+source .venv/bin/activate
+
+**3. Загрузка зависимостей:**
+
+pip install --upgrade pip
 pip install -r requirements.txt
 
-**3. Запуск утилиты:**
-```bash
-python main.py
-```
+**4. Запуск программы:**
+
+streamlit run app.py
 
 ## Использование
 
